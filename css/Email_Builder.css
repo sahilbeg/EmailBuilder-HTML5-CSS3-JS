@@ -1,0 +1,308 @@
+ /* Set margin and box-sizing to 0 for all elements */
+ * {
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ /* Style for the head bar */
+ .head-bar {
+     background-color: #000000;
+     color: white;
+     text-align: center;
+     height: 90px;
+ }
+
+ .top-bar {
+     background-color: #000000;
+     color: white;
+     align-items: left;
+     padding: 20px 30px;
+     height: 90px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+ }
+
+ .main-body {
+     color: white;
+     align-items: left;
+     display: flex;
+     flex-wrap: unset;
+     align-items: center;
+ }
+
+ /* Style for the left navigation */
+ .left-nav {
+     height: calc(100vh - 90px);
+     max-width: 500px;
+     width: 17%;
+     background-color: #000000;
+     overflow: auto;
+     padding: 0px 20px 0px;
+     resize: horizontal;
+     flex-direction: column;
+     display: flex;
+     /* Add display:flex to the first child div */
+     justify-content: flex-start;
+     /* Align content to the left */
+     align-items: center;
+ }
+
+ .navigation {
+     background-color:#000000;
+     padding: 10px 10px 30px;
+
+ }
+
+ .right-screen-changer {
+     background-color: #2d2d2d;
+     padding: 10px 10px 30px;
+     width: 20px;
+
+ }
+
+ .nav-headline {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 20px;
+     text-align: center;
+     color: #fff;
+     text-align: left;
+     padding: 20px 0px 20px 0px;
+
+ }
+
+ .heading {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 15px;
+ }
+
+ .heading_title {
+     justify-content: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 25px;
+     text-align: center;
+     width: 70%;
+     height: -webkit-fill-available;
+     display: flex;
+     /* Add display:flex to the second child div */
+     flex-direction: column;
+     /* Change the direction of flex items to column */
+     justify-content: flex-end;
+     /* Align items to the bottom */
+ }
+
+ .card-container {
+     display: flex;
+     justify-content: center;
+     align-content: flex-start;
+     align-items: left;
+     flex-wrap: wrap;
+     gap: 30px;
+     padding-bottom: 30px;
+     border-bottom: 2px solid #fff;
+ }
+
+ .card {
+     width: 50px;
+     height: 50px;
+     background-color: white;
+     margin: 0px;
+     padding: 10px;
+     border-radius: 5px;
+     box-shadow: 2px 2px 5px #999;
+ }
+
+ .card:hover {
+     transform: scale(1.1);
+     transition: transform 0.2s;
+ }
+
+ .img_icon {
+     width: 31px;
+     height: auto;
+     animation: shake 0.5s;
+     transition: transform 0.2s ease;
+ }
+
+ .img_icon:hover {
+     transform: scale(1.1);
+     transition: transform 0.2s;
+ }
+
+
+ .save_img_icon {
+    width: 50px;
+    height: auto;
+    animation: shake 0.5s;
+    transition: transform 0.2s ease;
+}
+
+
+ .navigation .card-container {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 30px;
+ }
+
+ .logo {
+     width: 20%;
+     display: flex;
+     /* Add display:flex to the first child div */
+     justify-content: flex-start;
+     /* Align content to the left */
+     align-items: center;
+     height: -webkit-fill-available;
+ }
+
+ .logo img {
+     align-self: flex-end;
+ }
+
+ .export {
+     width: 10%;
+     display: flex;
+     /* Add display:flex to the third child div */
+     flex-direction: column;
+     /* Change the direction of flex items to column */
+     justify-content: flex-end;
+     /* Align items to the bottom */
+     height: -webkit-fill-available;
+     align-items: flex-end;
+     /* Align items horizontally to the right */
+ }
+
+ /* Container styling */
+ .container {
+     width: 600px;
+     min-height: 500px;
+     height: fit-content;
+     margin: 0;
+     border: 1px solid black;
+     box-sizing: border-box;
+     padding: 10px;
+     text-align: center;
+     max-width: 100%;
+     z-index: 1;
+     box-shadow: 0px 3px 6px #888888;
+
+ }
+
+ /* Design body */
+ .design_body {
+     background-color: #fff;
+     height: calc(100vh - 142px);
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     padding: 0px 20%;
+     margin-left: 21%;
+     overflow-y: auto;
+     justify-content: baseline;
+     margin-top: 90px;
+ }
+
+ .center-content {
+     /* width: calc(100% - 20px);  */
+     width: 55%;
+     margin: 0;
+     display: block;
+     align-items: center;
+     height: -webkit-fill-available;
+     display: flex;
+     /* Add display:flex to the second child div */
+     flex-direction: column;
+     /* Change the direction of flex items to column */
+     justify-content: flex-end;
+     /* Align items to the bottom */
+     background-color: #D0D0D0;
+ }
+
+ .email-body {
+     height: calc(100vh - 90px);
+     max-width: 600px;
+     width: 600px;
+     background-color: #ffffff;
+     overflow: auto;
+     padding: 0px;
+     resize: horizontal;
+     display: block;
+     flex-direction: column;
+     margin: 0 auto;
+ }
+
+ .levitate {
+     transition: transform 0.5s ease;
+ }
+
+ .levitate:hover {
+     transform: translate(0, -10px);
+ }
+
+ .code_pannel {
+     width: 28%;
+     display: block;
+     /* Add display:flex to the third child div */
+     flex-direction: column-reverse;
+     /* Change the direction of flex items to column */
+     justify-content: flex-end;
+     /* Align items to the bottom */
+     height: calc(100vh - 90px);
+     align-items: flex-end;
+     /* Align items horizontally to the right */
+     background-color: #000000;
+
+ }
+
+ .code_palet {
+    width: 100%;
+    background-color: #525252;
+    border: 2px solid #959191;
+    height: 50vh;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    line-height: 1.5;
+    overflow-x: auto;
+    margin-top: 0px;
+    padding: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    max-width: 100%;
+  }
+  
+
+ #parent3 #code {
+     padding: 20px 20px 0px;
+     font-family: monospace;
+ }
+
+
+ .code_palet_headline{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 25px;
+     text-align: right;
+     color:#fff;
+     padding: 10px 25px 10px 10px;
+     background-color: #000000;
+     text-align: right;
+     font-style: italic;
+ }
+
+ .insert_container{
+    display: block;
+    width: 100%;
+    height: calc(90vh - 90px);
+ }
+
+
+ .selected {
+   border: 2px solid rgb(87, 85, 85);
+ }
+ .selected-code {
+   background-color: yellow;
+ }

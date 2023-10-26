@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link class="tab_icon" rel="icon"
+    href="https://assets-global.website-files.com/608c35f727b0be56a88885c1/60b6a1711839fc251f1ff705_favicon.png"
+    type="image/x-icon" />
+  <title>MY | E-MAIL BUILDER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/Email_Builder.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="head-bar">
+    <div class="top-bar">
+      <div class="logo">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3178/3178283.png"
+          alt="Product Name Logo" title="Logo" width="50">
+      </div>
+      <div class="heading_title">
+        E-MAIL<br><span style="font-size: 16px;line-height:20px;font-style: italic;">Email development platform</span>
+      </div>
+      <div class="export" id="download-btn">
+        <img class="levitate" src="./img/icons8-export-100.png" alt="Export Logo" style="width: 30px;"
+          title="Export your Email">
+      </div>
+    </div>
+  </div>
+  <div class="main-body">
+    <div class="left-nav">
+      <div class="navigation">
+        <div class="nav-headline">
+          Header and Footer Block
+        </div>
+        <div class="card-container" id="parent1">
+          <div class="card component" draggable="true" ondragstart="dragstart(event)" id="image8"><img class="img_icon"
+              src="./img/icons8-document-header-100.png" alt="Image Icon" title="Header Block" draggable="false"></div>
+          <div class="card component" draggable="true" ondragstart="dragstart(event)" id="image9"><img class="img_icon"
+              src="./img/icons8-footer-100.png" alt="Text Icon" title="Footer Block" draggable="false"></div>
+        </div>
+        <div class="nav-headline">
+          Building Blocks
+        </div>
+        <div class="card-container" id="parent1">
+          <div class="card component" draggable="true" ondragstart="dragstart(event)" id="image1"><img class="img_icon"
+              src="./img/icons8-image-100.png" alt="Image Icon" title="Image Block" draggable="false"></div>
+          <div class="card component" draggable="true" ondragstart="dragstart(event)" id="image2"><img class="img_icon"
+              src="./img/icons8-paste-as-text-100.png" alt="Text Icon" title="Text Block" draggable="false"></div>
+          <div class="card component" draggable="true" ondragstart="dragstart(event)" id="image3"><img class="img_icon"
+              src="./img/icons8-button-100.png" alt="CTA Icon" title="CTA Block" draggable="false"></div>
+          <div class="card component" draggable="true" ondragstart="dragstart(event)" id="image4"><img class="img_icon"
+              src="./img/icons8-view-column-100.png" alt="Two column Icon" title="Multi-Column Block" draggable="false">
+          </div>
+          <div class="card component" draggable="true" ondragstart="dragstart(event)" id="image5"><img class="img_icon"
+              src="./img/icons8-view-module-100.png" alt="Multi row column" title="Multi-raw and column Block"
+              draggable="false"></div>
+        </div>
+        <div class="nav-headline">
+          Custom Blocks
+        </div>
+        <div class="card-container" id="clickable-element-2">
+          <div class="card component" id="component6" draggable="true"><img class="img_icon"
+              src="./img/icons8-code-100.png" alt="Image Icon" title="Custom Code Block" draggable="false"></div>
+        </div>
+        <div class="nav-headline">
+          Import file
+        </div>
+        <div class="card-container" id="clickable-element-3">
+          <div class="card component" id="component7" draggable="true"><img class="img_icon"
+              src="./img/icons8-code-file-100.png" alt="Image Icon" title="Import HTML File" draggable="false"></div>
+        </div>
+      </div>
+    </div>
+    <div class="center-content">
+      <div class="email-body" id="parent2" ondragover="allowDrop(event)" ondrop="drop(event)">
+       <!-- Your content here --> 
+      </div>
+    </div>
+    <div class="code_pannel" id="parent3">
+      <div class="code_palet_headline"><img id="save_btn" class="save_img_icon levitate"
+        src="./img/icons8-save-64.png" alt="Image Icon" title="Save button" draggable="false"></div>
+      <div class="code_palet" id="code" contenteditable="true"></div>
+    </div>
+  </div>
+
+  <script src="./js/Email_Builder.js"> </script>
+  
+</body>
+
+</html>
